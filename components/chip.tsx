@@ -11,7 +11,7 @@ export default function App() {
         content: "drop-shadow shadow-black text-white",
       }}
     >
-      <span className="font-semibold text-xs">Introducing Easy NextUI Template</span>
+      <span className="font-semibold text-xs">✨ Introducing Easy NextUI Template</span>
     </Chip>
   );
 }

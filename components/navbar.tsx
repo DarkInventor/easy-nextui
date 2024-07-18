@@ -2,10 +2,10 @@ import {
   Navbar as NextUINavbar,
   NavbarContent,
   NavbarMenu,
-  NavbarMenuToggle,
   NavbarBrand,
   NavbarItem,
   NavbarMenuItem,
+  NavbarMenuToggle,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
 import { Kbd } from "@nextui-org/kbd";
@@ -81,14 +81,14 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        {/* <NavbarItem className="hidden sm:flex gap-2">
           <ThemeSwitch />
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem className="hidden md:flex gap-2">
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 "
+            className="text-sm font-normal text-default-600"
             href={siteConfig.links.sponsor}
             color="primary"
             variant="light"
@@ -98,7 +98,7 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 text-white bg-blue-500"
+            className="text-sm font-normal text-default-600 text-white bg-blue-600"
             href={siteConfig.links.sponsor}
             color="primary"
             variant="shadow"
@@ -112,7 +112,7 @@ export const Navbar = () => {
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <NavbarMenuToggle />
       </NavbarContent>
 
